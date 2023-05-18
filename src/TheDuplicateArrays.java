@@ -7,27 +7,24 @@ public class TheDuplicateArrays {
         int [] res = removeDuplicates(num);
         System.out.println(Arrays.toString(res));
 
-
     }
-    public static int[] removeDuplicates(int arr []){
-        int [] result = new  int[arr.length]; // initializing the new array
-        int idx = 0;
+    public static int [] removeDuplicates(int [] arr){
+        int [] result = new int[arr.length]; // initializing the new array
+        int idx = 0;                         // initializing the index
 
-        for (int i = 0; i < arr.length; i++){ // Loop through the input array
-            boolean isDuplicate = false;      // add a flag
+        for(int i = 0; i < arr.length; i++){ // Looping through the input array
+            boolean isDuplicate = false;     // initializing the flag
 
-            // Loop through the result array up-to the current index
-            for(int j = 0; j < idx; j++){
-                if(arr[i] == result[j]){
-                    isDuplicate = true;
-                    break;
+            for(int j = 0; j < idx; j++){    // Looping through the index
+                if(arr[i] == result[j]){     // checking the arrays duplicates
+                    isDuplicate = true;      // changing the flag to true
+                    break;                   // break the loop
                 }
             }
-            if(!isDuplicate){
-                result[idx++] = arr[i];
+            if(!isDuplicate){                // if it is not duplicate
+                result[idx++] = arr[i];      // result [ index == idx] == arr [i]
             }
-
         }
-        return Arrays.copyOf(result,idx);
+        return Arrays.copyOf(result,idx);    // returning the new result array
     }
 }
