@@ -1,3 +1,5 @@
+package TheArrays;
+
 public class TheLargestSumOfTheArray {
     public static int findMaxSubarraySum(int[] nums) {
         int maxSum = nums[0];  // Initialize maxSum with the first element

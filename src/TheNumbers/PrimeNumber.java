@@ -1,10 +1,8 @@
-import java.util.Arrays;
+package TheNumbers;
 
-public class Main {
+public class PrimeNumber {
     public static void main(String[] args) {
 
 
-
     }
-
 }

@@ -1,3 +1,5 @@
+package TheArrays;
+
 public class TheSubArrayOfNum {
     public static void main(String[] args) {
 
