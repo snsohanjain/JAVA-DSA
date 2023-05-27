@@ -17,7 +17,8 @@ public class ArmstrongNumber {
 
         if(result == temp){
             System.out.println("ArmstrongNumber");
-        }else{
+        }
+        else{
             System.out.println("Not ArmstrongNumber");
         }
 

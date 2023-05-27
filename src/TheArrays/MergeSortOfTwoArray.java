@@ -11,12 +11,11 @@ public class MergeSortOfTwoArray {
         bubbleSort(mergedArray);
         System.out.println(Arrays.toString(mergedArray));
 
-
     }
     public static int [] mergeArray(int [] arr1, int [] arr2){
         int [] newArray = new int[arr1.length + arr2.length];
-
         // copy the existing element to the new Array
+
         for (int i = 0; i < arr1.length; i++) {
             newArray[i] = arr1[i];
         }
@@ -39,6 +38,7 @@ public class MergeSortOfTwoArray {
                 }
             }
         }
-
     }
 }
+
+
