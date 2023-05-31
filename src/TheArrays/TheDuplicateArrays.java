@@ -5,12 +5,16 @@ import java.util.Arrays;
 public class TheDuplicateArrays {
 
     public static void main(String[] args) {
+
         int [] num = {1,2,2,3,4,5,5,6};
+
         int [] res = removeDuplicates(num);
+
         System.out.println(Arrays.toString(res));
 
     }
     public static int [] removeDuplicates(int [] arr){
+
         int [] result = new int[arr.length]; // initializing the new array
         int idx = 0;                         // initializing the index
 
