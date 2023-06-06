@@ -15,7 +15,6 @@ public class TheArraysInteger {
         System.out.println(Arrays.toString(num));
         int[] uniqueArr = removeDuplicates(num);
         System.out.println(Arrays.toString(uniqueArr));
-
     }
     public static int[] removeDuplicates(int[] arr){
         int[] result = new int[arr.length]; // create a new array to store the result
