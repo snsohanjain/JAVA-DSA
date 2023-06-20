@@ -1,6 +1,5 @@
 package TheLinkedList;
 
-
 import java.util.Arrays;
 import java.util.LinkedList;
 
@@ -10,25 +9,25 @@ public class RemoveTheDuplicatesInLinkedList {
         LinkedList<Integer> list = new LinkedList<>();
         list.add(10);
         list.add(20);
-        list.add(20);
+        list.add(30);
         list.add(30);
         list.add(40);
+        list.add(40);
         list.add(50);
-        list.add(60);
 
         int j = 0;
         int [] result = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
             result[j++] = list.get(i);
         }
-        int [] newResult = removeDuplicate(result);
-
+        int [] finalResult = removeDuplicate(result);
         list.clear();
-        for (int i = 0; i < newResult.length; i++) {
-            list.add(newResult[i]);
+
+        for(int ch: finalResult){
+            list.add(ch);
         }
-        //PRINTING LINKED-LIST
         System.out.println(list);
+
     }
     public static int [] removeDuplicate(int [] arr){
         int [] result = new int[arr.length];
@@ -37,12 +36,12 @@ public class RemoveTheDuplicatesInLinkedList {
             boolean isDuplicate = false;
             for (int j = 0; j < idx; j++) {
                 if(arr[i] == result[j]){
-                    isDuplicate = true;
-                    break;
+                   isDuplicate = true;
+                   break;
                 }
             }if(!isDuplicate){
                 result[idx++] = arr[i];
             }
-        }return Arrays.copyOf(result, idx);
+        }return Arrays.copyOf(result,idx);
     }
 }
